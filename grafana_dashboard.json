@@ -34,10 +34,6 @@
       "type": "row"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "fdwe81suzec5ce"
-      },
       "description": "For this metric, each individual query outside a transaction is counted as one transaction. All queries that run inside a transaction are counted as one transaction.",
       "fieldConfig": {
         "defaults": {
@@ -113,11 +109,6 @@
         }
       },
       "targets": [
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "fdwe81suzec5ce"
-          },
           "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
@@ -135,10 +126,6 @@
       "type": "timeseries"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "fdwe81suzec5ce"
-      },
       "description": "The number of individual queries run",
       "fieldConfig": {
         "defaults": {
@@ -214,11 +201,6 @@
         }
       },
       "targets": [
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "fdwe81suzec5ce"
-          },
           "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
@@ -236,10 +218,6 @@
       "type": "timeseries"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "fdwe81suzec5ce"
-      },
       "description": "Average Query Latency",
       "fieldConfig": {
         "defaults": {
@@ -316,11 +294,6 @@
         }
       },
       "targets": [
-        {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "fdwe81suzec5ce"
-          },
           "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
@@ -338,10 +311,6 @@
       "type": "timeseries"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "fdwe81suzec5ce"
-      },
       "description": "Average latency of transactions",
       "fieldConfig": {
         "defaults": {
@@ -419,10 +388,6 @@
       },
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "fdwe81suzec5ce"
-          },
           "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
@@ -440,10 +405,6 @@
       "type": "timeseries"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "fdwe81suzec5ce"
-      },
       "description": "Data received in bytes",
       "fieldConfig": {
         "defaults": {
@@ -521,10 +482,6 @@
       },
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "fdwe81suzec5ce"
-          },
           "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
@@ -542,10 +499,6 @@
       "type": "timeseries"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "fdwe81suzec5ce"
-      },
       "description": "Data sent in bytes",
       "fieldConfig": {
         "defaults": {
@@ -623,10 +576,6 @@
       },
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "fdwe81suzec5ce"
-          },
           "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
@@ -657,10 +606,6 @@
       "type": "row"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "fdwe81suzec5ce"
-      },
       "description": "This is the ratio between the number of active server connections to the pool size. Persistently high ratio (e.g. 80%-100%) may suggest the need for a larger pool or a more performant Database",
       "fieldConfig": {
         "defaults": {
@@ -740,10 +685,6 @@
       },
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "fdwe81suzec5ce"
-          },
           "disableTextWrap": false,
           "editorMode": "code",
           "exemplar": false,
@@ -760,11 +701,6 @@
       "title": "Percentage Server Pool Utilization",
       "type": "timeseries"
     },
-    {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "fdwe81suzec5ce"
-      },
       "description": "The number of Clients currently waiting in the queue waiting for a server connection to be assigned. This should remain close to 0. Any persistent deviation from zero means clients are blocked from querying the database",
       "fieldConfig": {
         "defaults": {
@@ -844,10 +780,6 @@
       },
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "fdwe81suzec5ce"
-          },
           "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
@@ -865,10 +797,6 @@
       "type": "timeseries"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "fdwe81suzec5ce"
-      },
       "description": "Banned connections won't get queries routed to them until they are unbanned. Instances are unbanned after the ban timer expires or if all replicas in the pool are banned so they are all unbanned as a failsafe. Primary instances are never banned",
       "fieldConfig": {
         "defaults": {
@@ -945,10 +873,6 @@
       },
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "fdwe81suzec5ce"
-          },
           "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
@@ -966,10 +890,6 @@
       "type": "timeseries"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "fdwe81suzec5ce"
-      },
       "description": "Paused connection are connections that belong to pool that was paused by the administrator",
       "fieldConfig": {
         "defaults": {
@@ -1046,10 +966,6 @@
       },
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "fdwe81suzec5ce"
-          },
           "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
@@ -1066,11 +982,6 @@
       "title": "Paused Connections",
       "type": "timeseries"
     },
-    {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "fdwe81suzec5ce"
-      },
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -1148,10 +1059,6 @@
       },
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "fdwe81suzec5ce"
-          },
           "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
@@ -1179,11 +1086,6 @@
       "title": "Server Metrics",
       "type": "row"
     },
-    {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "fdwe81suzec5ce"
-      },
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -1260,10 +1162,6 @@
       },
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "fdwe81suzec5ce"
-          },
           "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
@@ -1281,10 +1179,6 @@
       "type": "timeseries"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "fdwe81suzec5ce"
-      },
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -1361,10 +1255,6 @@
       },
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "fdwe81suzec5ce"
-          },
           "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
@@ -1382,10 +1272,6 @@
       "type": "timeseries"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "fdwe81suzec5ce"
-      },
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -1462,10 +1348,6 @@
       },
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "fdwe81suzec5ce"
-          },
           "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
@@ -1483,10 +1365,6 @@
       "type": "timeseries"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "fdwe81suzec5ce"
-      },
       "description": "",
       "fieldConfig": {
         "defaults": {
@@ -1563,10 +1441,6 @@
       },
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "fdwe81suzec5ce"
-          },
           "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
@@ -1597,10 +1471,6 @@
       "type": "row"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "fdwe81suzec5ce"
-      },
       "description": "The number of Clients currently connected but not assigned a server connection nor are they seeking one",
       "fieldConfig": {
         "defaults": {
@@ -1680,10 +1550,6 @@
       },
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "fdwe81suzec5ce"
-          },
           "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
@@ -1701,10 +1567,6 @@
       "type": "timeseries"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "fdwe81suzec5ce"
-      },
       "description": "The number of Clients currently assigned a server connection",
       "fieldConfig": {
         "defaults": {
@@ -1784,10 +1646,6 @@
       },
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "fdwe81suzec5ce"
-          },
           "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
@@ -1805,10 +1663,6 @@
       "type": "timeseries"
     },
     {
-      "datasource": {
-        "type": "prometheus",
-        "uid": "fdwe81suzec5ce"
-      },
       "description": "The number of Clients currently waiting in the queue waiting for a server connection to be assigned. This should remain close to 0. Any persistent deviation from zero means clients are blocked from querying the database",
       "fieldConfig": {
         "defaults": {
@@ -1888,10 +1742,6 @@
       },
       "targets": [
         {
-          "datasource": {
-            "type": "prometheus",
-            "uid": "fdwe81suzec5ce"
-          },
           "disableTextWrap": false,
           "editorMode": "builder",
           "exemplar": false,
@@ -1924,10 +1774,6 @@
           "text": "All",
           "value": "$__all"
         },
-        "datasource": {
-          "type": "prometheus",
-          "uid": "fdwe81suzec5ce"
-        },
         "definition": "label_values(pgcat_databases_current_connections,role)",
         "description": "Instance Role in the pool",
         "hide": 0,
@@ -1957,10 +1803,6 @@
           "value": [
             "$__all"
           ]
-        },
-        "datasource": {
-          "type": "prometheus",
-          "uid": "fdwe81suzec5ce"
         },
         "definition": "label_values(pgcat_databases_current_connections,shard)",
         "description": "",
@@ -1992,10 +1834,6 @@
             "$__all"
           ]
         },
-        "datasource": {
-          "type": "prometheus",
-          "uid": "fdwe81suzec5ce"
-        },
         "definition": "label_values(pgcat_databases_current_connections,index)",
         "description": "The instance index in the role (e.g. a pool with two replicas will have instances with indices 0 and 1",
         "hide": 0,
@@ -2022,10 +1860,6 @@
           "text": "All",
           "value": "$__all"
         },
-        "datasource": {
-          "type": "prometheus",
-          "uid": "fdwe81suzec5ce"
-        },
         "definition": "label_values(pgcat_databases_current_connections,pool)",
         "description": "The PgCat Connection Pool ",
         "hide": 0,
@@ -2051,10 +1885,6 @@
           "selected": true,
           "text": "All",
           "value": "$__all"
-        },
-        "datasource": {
-          "type": "prometheus",
-          "uid": "fdwe81suzec5ce"
         },
         "definition": "label_values(pgcat_databases_current_connections,host)",
         "description": "The underlying Database host name",
@@ -2085,10 +1915,6 @@
           "value": [
             "$__all"
           ]
-        },
-        "datasource": {
-          "type": "prometheus",
-          "uid": "fdwe81suzec5ce"
         },
         "definition": "label_values(usename)",
         "description": "PostgreSQL username used by the pool",
